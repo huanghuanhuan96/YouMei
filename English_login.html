@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+<meta name="description" content="" />
+<meta name="keywords" content="" />
+<link rel="stylesheet" href="css/default.css">
+<link rel="stylesheet" href="css/jia.css">
+<link rel="stylesheet" href="css/font-awesome.css">
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+<link rel="Bookmark" href="favicon.ico">
+<link rel="stylesheet" href="css/login.css">
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.cookie.js"></script>
+<script src="js/login.js"></script>
+
+
+</head>
+<body style="background-image:url(imgs/bg_pic.jpg);background-attachment:fixed;background-repeat:no-repeat;background-size:100% 100%">
+<header>
+                     
+
+<div class="login-part">
+              <h3 style="padding-left:0; color:#f00" align="center">Account login </h3>			  
+              <div class="user-info">
+                <div class="user-pass">        
+                  <form id="fm1" action="#" method="">
+                    <input id="username" name="username" autocomplete="false" tabindex="1" placeholder="请输入用户名" class="user-name" type="text" value=""/>
+					<img src="imgs/login/true.png" alt=""  class="name_pic">
+										<p class="p_user" style="color:red">User name needs 3 ≤ 8 digits or characters!</p>									 
+										<input id="password" name="password" tabindex="2" placeholder="Enter Your Password" class="pass-word" type="password" value="" autocomplete="off"/>
+                    <p class="p_upss" style="color:red">The password needs 3 to 6 digits!</p>
+					     <img src="imgs/login/true.png" alt="" class="upss_pic">
+						   	  <div class="error-mess" style="display:none;">
+								  <span class="error-icon"></span><span id="error-message"></span>
+								</div>
+								
+                    <div class="row forget-password" style="padding-right:25%;">
+                    	<span class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+                        	<input type="checkbox" name="rememberMe" id="rememberMe" value="true" class="auto-login" tabindex="4"/><label for="rememberMe" style="font-size:19px;color:#ddd">下次自动登录</label>
+                      </span>                      
+                    </div>
+                  
+					<input type="hidden" name="lt" value="LT-1930113-ACqAJTx3ewFa1IaLNw1CVcSsEdAXHZ" />
+			 		<input type="hidden" name="execution" value="e2s1" /> 
+					<input type="hidden" name="_eventId" value="submit" /> 
+					<a href="javascript:;" class="a_int"><input class="logging"  id="myLogin" accesskey="l" value="mylogin" tabindex="6" type="button" /> </a>
+             </form> 
+		  </div>
+              </div>			  
+             <div class="line"></div>
+              <div class="third-part tracking-ad" data-mod="popu_27" style="margin:0 auto;">
+								<span style="color:rgb(156, 35, 35);">
+									Third party account login
+								</span>
+              	<div style="height: 80px">		
+              		<a><img src="imgs/login/qqzones.png" style="width:50px; margin-left: 25px;"></a>
+              		<a><img src="imgs/login/weixins.png" style="width:45px; margin-left: 20px;"  ></a>
+              		<a><img src="imgs/login/sinas.png" style="width:50px; margin-left: 20px;"></a>
+              	</div>              	
+                <div class="register-now" >
+	                <span class="register tracking-ad" data-mod="popu_28"></span>
+	                	<font style="font-size: 17px;color:#fff;">
+                      No account yet? 
+                      </font>
+										<a href="register.html" class="logist_justnow" 
+										tyle="color:lightblue;padding-left:5%;font-size:18px;">Immediate registration</a>  
+               	</div>
+               
+              </div>
+            </div>            
+   </header>       
+   <script>
+                       //用户框获取焦点时，显示红字，图片隐藏
+					    //#username      .p_user  .name_pic   样式 : open 是显示。 close 隐藏 
+								 $('#username').focus(
+										function(){											
+											var $p1=$('.p_user');									
+											$('.name_pic').addClass('close');
+											$p1.removeClass('close');	
+											$p1.addClass('open');					
+										}
+									);
+							//密码框获取焦点时，显示红字 图片隐藏
+							//#password       .p_upss   .upss_pic      
+								 $('#password').focus(
+									function(){									  
+									 var $p2=$('.p_upss');
+									  $p2.removeClass('close');
+									 $p2.addClass('open');
+									 $('.upss_pic').addClass('close');
+								 });	
+
+								 //验证输入文本框的value 是否正确
+								//#username        文字.p_user   图片.name_pic
+								 var $reg=/^[0-9A-Za-z]{3,8}$/;
+								 var $img=$('.name_pic');
+								 $('#username').blur(function(){																 
+									 var $val=$(this);
+									if($reg.test($val.val())){	
+										//内容正确， 图片显示  红字隐藏	
+										$img.removeClass('close');								  
+                                        $img.addClass('open');
+							           $('.p_user').addClass('close');
+								    }else {
+
+									  //  √ 图片隐藏                                   
+                                        //  P标签 显示
+                                        //  p标签内容修改为 用户名格式不正确
+										 $img.addClass('close');
+										   $('.p_user').removeClass('close'); 
+									   $('.p_user').addClass('open');                            
+									   $('.p_user').html('The user name is incorrect!')
+									   
+								  }							 
+
+								 }); 
+								 
+								 //验证密码框的value 是否符合
+								 var $reg1=/^\d{3,6}$/;								  
+                            $('#password').blur(function(){								
+									  var $val_after=$(this);
+										var $img2=$('.upss_pic');
+								 if($reg1.test($val_after.val())){
+									  $img2.removeClass('close');
+									 $img2.addClass('open');
+									 $('.p_upss').addClass('close');
+								 }else{		
+									  $('.p_upss').removeClass('close');						 
+									 $('.p_upss').addClass('open');
+									 $('.p_upss').html('')
+									 
+									 
+								  }
+								 });	
+
+
+				//点击登录按钮  发送ajax请求
+			 
+   
+   </script>            
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+ 
+ 
+</html>

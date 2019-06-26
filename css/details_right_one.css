@@ -1,0 +1,90 @@
+.top{
+    width:600px;
+    margin:142px 0px 0px 1120px ;
+}
+.list{
+
+    justify-content:space-around;
+    list-style: none;
+    
+}
+.list li{
+    transition:2s;
+}
+
+.list li a{
+    text-decoration:none;
+    color:orangered;
+}
+.list li a:hover{
+    color:green;
+    transform: scale(1.2);
+}
+#prev{
+margin-left:-66px;
+}
+#next{
+    margin-right:20px !important;
+}
+#myul{
+    margin-left:-45rem;
+}
+#myul li{
+    width:18px;
+    height:18px;
+    border:1px solid #fff;
+    border-radius:50%;
+    cursor:pointer;
+}
+#myul>li.active{
+    background-color:#aa00aa;
+  }
+  .pics_hover{
+      width:380px;
+      height:572px;
+  }
+  .pics_hover:hover{
+      overflow: hidden;
+  }
+    .myright{
+      position:absolute;
+      top:396px;
+      left:1105px;
+  }
+  .myright img:hover{
+    cursor:pointer;
+      transition:1s;
+      transform:scale(1.1,1.1);
+  }
+  div.bird{ 
+    
+    width:1100px;
+    height:445px;
+    margin-top:150px !important;
+    margin-left:760px;
+    align-items:flex-end;
+      
+  }
+    .kewang{
+        align-items:flex-start;
+        margin:-209px 0px 0px 1052px;
+    }
+    .right{
+        margin-left:268px;
+    }
+    
+    .designer_right{
+        align-items:flex-start;
+    }
+   
+.italy_top,.italy_bottom>h4{
+    text-align: center;
+}
+.italy_bottom div div{
+    transition:2s;
+}
+.italy_bottom div div img:hover{
+ transform:translateY(-20px)  
+}
+ 
+  

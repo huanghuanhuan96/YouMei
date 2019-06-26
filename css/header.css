@@ -1,0 +1,80 @@
+ 
+   #header{  
+    width:1140px;
+    height:147px; 
+    margin:0 auto;
+    top:20px;
+    background-color:rgb(182, 4, 4); 
+    position:relative;
+    
+  }
+
+  .my_head{
+    width:130px;
+    height:147px;
+    position:absolute;
+    border-left:2px solid #fff;
+    border-right:2px solid #fff;
+    color:#000;
+    font:88px "华文琥珀";
+    margin-top:30px;
+     
+    
+  }
+  .my_head>span{
+    display:inline-block;
+    margin-top:32px;
+    margin-left:10px;
+  }
+ 
+  .middle{
+    width:637rem;
+    position:absolute;
+    top:3rem;
+    left:19rem;
+  }
+  .middle>div>span{
+    cursor:pointer;
+    font:20px "幼圆";
+  }
+  .middle>div>span:hover{
+    background-color:rgba(180, 163, 163, 0.541);
+  }
+  #head_find{
+    width:350px;
+    height:38px;
+    margin-right:-3px;
+    margin-top:3px;
+  }
+
+  #head_find+input{
+     margin-bottom:6px;
+     
+  }
+    #mysearch{
+      margin-top:8px;   
+    }
+    .search{
+      height:38px;
+      margin-bottom:6px;
+    }
+ .ul_right{
+  width:60rem;
+  height:5rem;
+  
+ }
+  .ul_right>ul{ 
+    display:flex;
+    justify-content:flex-end;
+    margin:6rem -9rem;
+    
+  
+  }
+  .ul_right>ul>li{
+    margin-right:10px;
+  }
+  .ul_right>ul>li>a{
+    font-size:20px;
+    color:#000;
+    text-decoration:none;
+  }

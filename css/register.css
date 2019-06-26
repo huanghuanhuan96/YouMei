@@ -1,0 +1,92 @@
+#main{
+
+  width:650px;
+  height: 750px;
+  border:1px solid #999;
+  border-radius:3%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top:100px;
+   
+}
+ 
+
+.username,.password,.email,.phone,.tj_btn,.name{
+ width:380px;
+ height:50.8px;
+ outline: pink;
+ padding:2px;
+ 
+}
+.username{
+  margin-top:25px;
+  margin-bottom:15px;
+}
+.password{
+  margin-bottom:15px;
+  margin-left:2px;
+
+}
+.email,.sex {
+  margin-bottom:15px;
+}
+.phone{
+  margin-bottom:25px;
+}
+.sex{
+  margin-left:10px;
+}
+.sex_span{
+  display: block;
+  margin-left:-293px;
+}
+.tj_btn{
+  color:#fff;
+  margin-left:44px;
+   vertical-align: middle;
+  font:25px '微软雅黑';
+}
+.text-danger,.true_pics,.true_pic,#email_img{
+  display:none;
+}
+.true_pics,.true_pic{
+ position:absolute;
+
+}
+.true_pics{
+ top:189px;
+ left:1050px;
+}
+.true_pic{
+  top:256px;
+  left:1050px;
+}
+
+ .pic_phone{
+   display:none;
+ }
+ .p_phone{
+   display:none;
+ }
+ .pic_phone{
+   margin-left: 508px;
+   margin-top: -48px;
+ }
+
+
+ #email_img{
+    
+  display:line-block;
+   margin-top:-46px !important;
+   margin-left:32rem;
+ }
+ .true_pics{
+   margin-top:0rem;
+   margin-left:10rem;
+ }
+.open{
+  display: block;
+}
+.pic_name{
+  display: none;
+}

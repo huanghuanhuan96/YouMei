@@ -1,0 +1,48 @@
+.logist_justnow:hover{
+  text-decoration:none;
+	color:#f00;
+ 
+ }
+ .login-part{
+  width:450px;
+  margin-left:510px;
+  margin-top:62px;
+  border:1px solid #999;
+
+ }
+ #fm1 input{
+   border:1px solid #999;
+ }
+ #username,#password{
+  color:#666 !important;
+ }
+ .logging{
+	 background-color:#999;
+	 
+ }
+ .a_int:hover{
+   text-decoration:none;
+ }
+ .logging:hover{
+		background-color:pink;
+		
+ }
+ .logist_justnow{
+	 text-decoration:none;
+	 color:15px;
+ }
+ .line{
+	 color:#999;
+ }
+ .p_user,.p_upss{
+	display:none;
+ }
+ .open{
+	 display:block;
+ }
+ 
+.close{
+	display:none;
+}
+ 
+ 

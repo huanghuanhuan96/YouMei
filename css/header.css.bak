@@ -1,0 +1,58 @@
+  
+.my_header{
+ width:100%;
+ height:70px;
+ background-color:#333;
+ display:flex;
+}
+
+ 
+#logo_1>img{
+width:12%;
+border-radius:50%;
+margin-top:21px;
+margin-left:200px;
+}
+
+.my_header h2{
+ color:#fff;
+ font:26px "幼圆";
+ margin-top:36px;
+ margin-left:-92px;
+}
+.my_link{
+ 
+margin-top:39px;
+margin-left:80px;
+
+}
+.my_link ul li {
+   float:left;
+  margin-right:28px;
+  list-style-type:none;
+}
+.my_link ul li a{
+
+  height:70px;
+  color:#fff;
+  font-size:14px;   
+  text-decoration:none;
+   padding:0 15px;
+   
+}
+.my_link ul{
+margin-left:0px;
+}
+.my_link ul li a{
+ transition:2s linear;
+}
+.my_link ul li a:hover{
+ background-color:#000;
+ transform:scale(1.2);
+
+}
+.my_hot{
+ width:0px;
+ height:0px;
+ background-color:#f00;
+}

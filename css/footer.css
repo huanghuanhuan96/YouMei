@@ -1,0 +1,59 @@
+.container{ 
+  width:100%;
+  text-decoration: none;
+}
+.bottom_gg>h4{
+  color:#f00;
+  font-family:"Ink Free";
+}
+.select_all{
+  position:relative;
+}
+.select_first,.select_second>select{
+  position:absolute;
+
+}
+.select_second>select{
+  top:51px;
+  left:157px;
+}
+
+.phone_hot{
+ justify-content:space-around !important;
+} 
+.cs{
+ position:absolute;
+ top:51px;
+ left:50px;
+}
+._desiger1{
+  font:20px "幼圆"
+  
+}
+._desiger2{
+  position:absolute;
+  margin-top:76px;
+  font:20px "幼圆"
+}
+.list_b{
+   
+  justify-content:space-around!important;
+  margin-left:250px;
+}
+ 
+ 
+.list_b li a{
+  color:#000;
+  text-decoration: none ;
+  
+  font:12px "微软雅黑";
+   
+   
+}
+a{
+  list-style: none !important;
+}
+.foot_copy{
+  margin-left:250px;
+}
+ 
